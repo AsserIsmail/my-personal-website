@@ -1,10 +1,12 @@
 import * as React from "react"
 import { Box, Heading, Text, Button, Center, Container } from '@chakra-ui/react';
+import { ColorModeSwitcher } from "../ColorModeSwitcher";
 
 export const MyPage = () => {
 
   return (
       <Container>
+        <ColorModeSwitcher></ColorModeSwitcher>
       <Center>
         <Box textAlign="center" py={10} px={6}>
         <Heading
