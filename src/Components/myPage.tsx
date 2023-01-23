@@ -11,9 +11,9 @@ export const MyPage = () => {
             display="inline-block"
             as="h2"
             size="2xl"
-            bgGradient="linear(to-r, teal.400, teal.600)"
+            bgGradient="linear(to-r, blue.400, cyan.600)"
             backgroundClip="text">
-            Asser Ismail Portfolio
+            Asser Ismail's Portfolio
         </Heading>
         <Text fontSize="18px" mt={3} mb={2}>
             -Coming Soon-
