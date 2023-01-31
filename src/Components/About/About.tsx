@@ -42,6 +42,7 @@ export const About = () => {
             `}
           </Text>
           {/* <Button as="a" bg="white" color="#000" download href="../../public/My_CS_Resume_Asser_Ismail.pdf">Hi</Button> */}
+          {/* https://react-icons.github.io/react-icons/icons?name=fi */}
           <Stack
             direction={"row"}
             spacing={3}

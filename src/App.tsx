@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { About } from "./Components/About/About";
-import Header  from "./Components/Nav/Navbar";
+import { Navbar }  from "./Components/Nav/Navbar";
 // import { Contact } from "./Components/Contact";
 // import { Navbar } from "./Components/Navbar";
 // import { Projects } from "./Components/Projects";
@@ -22,7 +22,7 @@ import Header  from "./Components/Nav/Navbar";
 export const App = () => (
   <ChakraProvider theme={theme}>
     <Box textAlign="center" fontSize="xl">
-      <Header />
+      <Navbar />
       <About />
       {/* <Projects />
       <Skills />
