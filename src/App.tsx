@@ -7,11 +7,12 @@ import {
   VStack,
   Code,
   Grid,
-  theme,
+  theme, Spacer,
 } from "@chakra-ui/react"
-import { ColorModeSwitcher } from "./ColorModeSwitcher"
+import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import { About } from "./Components/About/About";
 import { Navbar }  from "./Components/Nav/Navbar";
+import { About2 } from "./Components/About/About2";
 // import { Contact } from "./Components/Contact";
 // import { Navbar } from "./Components/Navbar";
 // import { Projects } from "./Components/Projects";
@@ -24,6 +25,11 @@ export const App = () => (
     <Box textAlign="center" fontSize="xl">
       <Navbar />
       <About />
+      <Spacer h="100px" />
+      <About2 />
+      <Spacer h="100px" />
+      <Spacer h="100px" />
+      <Spacer h="100px" />
       {/* <Projects />
       <Skills />
       <Testimonials />

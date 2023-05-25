@@ -5,9 +5,9 @@ import { TiArrowRightThick } from 'react-icons/ti'
 import { ColorModeSwitcher } from "../../ColorModeSwitcher";
 // import  ProfileImg  from './white-black-ai-round.png';
 
-export const About = () => {
+export const About2 = () => {
   return (
-    <Container id="about" maxW={1480} display="flex" justifyContent="space-evenly" h="300" p={8} mt={{ sm: 20, md: 20, '2xl': 36}}>
+    <Container id="skills" maxW={1480} display="flex" justifyContent="space-evenly" h="300" p={8} mt={{ sm: 20, md: 20, '2xl': 36}}>
       <Flex direction="column" w={25} justify="center" mt={{ sm: 564, md: 2 }}>
         <Link _focus={{outline: 'none'}} href="https://www.linkedin.com/in/asserismail/" target="_blank" w={25} title="LinkedIn">
           <FiLinkedin size={25} />
@@ -37,7 +37,7 @@ export const About = () => {
           </Text> */}
           <Text mt="8"  mb="4">
             {`
-              Hello World! I'm Asser Ismail, a software engineer based in the Mississauga, ON, Canada. 
+              Hello World! I'm Asser Ismail, a software engineer based in the Canada. 
               I specialize in building (and occasionally designing) exceptional websites, applications, and everything in between.
             `}
           </Text>
