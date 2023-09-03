@@ -29,7 +29,6 @@ export const App = () => (
       {/*<About2 />*/}
       <Spacer h="100px" />
       <Spacer h="100px" />
-      <Spacer h="100px" />
       {/* <Projects />
       <Skills />
       <Testimonials />
