@@ -61,7 +61,7 @@ export const About = () => {
             maxW={200}
             minH={10}
             size='md'
-            href="../../Asser Ismail_ Resume CS.pdf"
+            href="../../Asser_Ismail_ Resume_CS.pdf"
             target="_black"
             style={{ textDecoration: 'none' }}
           >
