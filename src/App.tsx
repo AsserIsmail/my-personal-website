@@ -26,7 +26,7 @@ export const App = () => (
       <Navbar />
       <About />
       <Spacer h="100px" />
-      <About2 />
+      {/*<About2 />*/}
       <Spacer h="100px" />
       <Spacer h="100px" />
       <Spacer h="100px" />
