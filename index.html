@@ -1,255 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="My Website Portfolio">
-    <meta name="author" content="Asser Ismail">
-    <meta name="keywords" content="Software Engineer, Web Developer, Full Stack Developer, Frontend Developer, Backend Developer">
-    <!-- icon -->
-    <link rel="icon" href="assets/imgs/ai_logo.png">
-    <title>Asser Ismail</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + main styles -->
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Asser Ismail is a software engineer building thoughtful, reliable web products.">
+  <meta name="author" content="Asser Ismail">
+  <meta name="theme-color" content="#0a2540">
+  <link rel="icon" href="assets/imgs/ai_logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/portfolio.css">
+  <title>Asser Ismail — Software Engineer</title>
 </head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Asser Ismail, home"><span>AI</span> Asser Ismail</a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">Open navigation</span></button>
+    <nav id="site-nav" aria-label="Primary navigation">
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#work">Work</a><a href="#resume">Résumé</a>
+      <a class="nav-cta" href="mailto:asserice@gmail.com">Let's talk</a>
+    </nav>
+  </header>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-
-    <!-- Page Navbar -->
-    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
-        <div class="container">
-            <a class="logo" href="#">Asser Ismail</a>
-            <ul class="nav">
-                <li class="item">
-                    <a class="link" href="#home">Home</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#about">About Me</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#experience">Experience</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#projects">Projects</a>
-                </li>
-            </ul>
-            <a id="nav-toggle" class="hamburger hamburger--elastic">
-                <div class="hamburger-box">
-                    <div class="hamburger-inner"></div>
-                </div>
-            </a>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Open to software engineering opportunities</p>
+        <h1 id="hero-title">I turn complex ideas into <em>useful software.</em></h1>
+        <p class="hero-intro">I'm Asser, a Toronto-based software engineer who builds full-stack products with clarity, craft, and a strong bias toward shipping.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
+          <a class="button text-button" href="assets/imgs/Resume.pdf" target="_blank" rel="noopener">View résumé <span aria-hidden="true">↗</span></a>
         </div>
-    </nav><!-- End of Page Navbar -->
-
-    <!-- page header -->
-    <header id="home" class="header">
-        <div class="overlay"></div>
-        <div class="header-content container">
-            <h1 class="header-title">
-                <span class="up">Hello World!</span>
-                <span class="down">I'm Asser Ismail</span>
-            </h1>
-            <p class="header-subtitle">SOFTWARE ENGINEER</p>
-            <div class="social-links mt-4">
-                <a href="https://www.linkedin.com/in/asserismail/" class="btn btn-primary mt-4"><i class="ti-linkedin"></i></a>
-                <a href="https://github.com/AsserIsmail" class="btn btn-primary mt-4"><i class="ti-github"></i></a>
-                <a href="assets/imgs/Resume.pdf" class="btn btn-primary mt-4" target="_blank"><i class="ti-download"></i> Resume</a>
-            </div>
-
+        <div class="hero-meta" aria-label="Professional highlights">
+          <div><strong>U of T</strong><span>Computer Science</span></div>
+          <div><strong>3.51</strong><span>CGPA</span></div>
+          <div><strong>2×</strong><span>Dean's List</span></div>
         </div>
-    </header><!-- end of page header -->
+      </div>
+      <div class="hero-visual reveal">
+        <div class="portrait-frame"><img src="assets/imgs/asser.jpeg" alt="Asser Ismail" width="800" height="800"></div>
+        <div class="floating-card"><span>Currently based in</span><strong>Mississauga, Ontario</strong></div>
+        <div class="code-stamp" aria-hidden="true">&lt;/&gt;</div>
+      </div>
+    </section>
 
-    <!-- about section -->
-    <section class="section pt-0" id="about">
-        <!-- container -->
-        <div class="container text-center">
-            <!-- about wrapper -->
-            <div class="about">
-                <div class="about-img-holder">
-                    <img src="assets/imgs/asser.jpeg" class="about-img"
-                        alt="A picture of me">
-                </div>
-                <div class="about-caption">
-                    <p class="section-subtitle">Who Am I ?</p>
-                    <h2 class="section-title mb-3">About Me</h2>
-                    <p>
-                        Hello! Based in Mississauga, ON, Canada, I am a software engineer that specializes in building 
-                        (and occasionally designing) exceptional websites, applications, and everything in between.
-                    </p>
-                    <!-- <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button> -->
-                   
-                </div>
-            </div>
+    <section class="marquee" aria-label="Technical skills"><div>Java <i>•</i> Python <i>•</i> TypeScript <i>•</i> React <i>•</i> Flask <i>•</i> MongoDB <i>•</i> SQL <i>•</i> Linux <i>•</i> Git</div></section>
+
+    <section class="section about" id="about">
+      <div class="section-label reveal"><span>01</span> About</div>
+      <div class="about-grid">
+        <h2 class="reveal">Engineering with curiosity, discipline, and a collaborative spirit.</h2>
+        <div class="about-copy reveal">
+          <p>I'm a Computer Science Specialist at the University of Toronto with hands-on experience designing and developing full-stack applications in collaborative, agile teams.</p>
+          <p>I enjoy moving across the stack—from data models and APIs to accessible interfaces—and learning the right technology for the problem at hand.</p>
+          <a class="inline-link" href="mailto:asserice@gmail.com">asserice@gmail.com <span>↗</span></a>
         </div>
-    </section> <!-- end of about section -->
+      </div>
+    </section>
 
-  
-    <!-- experience section -->
-    <section class="section" id="experience">
-        <!-- container -->
-        <div class="container text-center">
-            <p class="section-subtitle">Recent Positions?</p>
-            <h6 class="section-title mb-6">Experience</h6>
-            <!-- blog-wrapper -->
-            <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="assets/imgs/img-1.jpg" class="blog-card-img"
-                        alt="picture">
-                </div>
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title">Consectetur adipisicing elit</h6>
+    <section class="section experience" id="experience">
+      <div class="section-label reveal"><span>02</span> Experience</div>
+      <div class="section-heading reveal"><h2>Where I've built and learned.</h2><p>Selected experience from my résumé.</p></div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-date">Sep 2022 — Present</div>
+          <div><p class="role-kicker">University of Toronto</p><h3>Full Stack Developer</h3><p>Designing and developing team projects using new languages and frameworks. Building with Flask, React, and MongoDB while working collaboratively in an agile scrum environment.</p><div class="tags"><span>React</span><span>Flask</span><span>MongoDB</span><span>Agile</span></div></div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-date">April 2023</div>
+          <div><p class="role-kicker">U of T Software Engineering Club</p><h3>Full Stack Developer</h3><p>Helped design member, event, and authentication data models. Built and tested a continuously deployed web application hosted on a Linux server.</p><div class="tags"><span>TypeScript</span><span>Python</span><span>DigitalOcean</span><span>Chakra UI</span></div></div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-date">January 2023</div>
+          <div><p class="role-kicker">UofTHacks X</p><h3>Developer — Crewise</h3><p>Shipped a crew management system in 36 hours, including reporting, weekly health checkups, secure storage, and role-based experiences for crew, doctors, and administrators.</p><div class="tags"><span>Hackathon</span><span>React</span><span>Flask</span><span>MongoDB</span></div></div>
+        </article>
+      </div>
+    </section>
 
-                        <p class="blog-card-caption">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                            <a href="#"><i class="ti-comment"></i> 123</a>
-                        </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit
-                            delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium
-                            neque numquam mollitia modi quasi distinctio.</p>
+    <section class="section work" id="work">
+      <div class="section-label reveal"><span>03</span> Selected work</div>
+      <div class="section-heading reveal"><h2>Built to solve, learn, and ship.</h2><a class="inline-link" href="https://github.com/AsserIsmail" target="_blank" rel="noopener">All projects on GitHub <span>↗</span></a></div>
+      <div class="project-grid">
+        <article class="project-card featured reveal"><div class="project-number">01</div><div><p class="role-kicker">Full-stack web application</p><h3>Crewise</h3><p>A role-based crew management platform built and deployed in 36 hours at UofTHacks X, with health checkups, reporting, and secure data storage.</p><div class="tags"><span>React</span><span>Flask</span><span>MongoDB</span></div></div><span class="project-arrow" aria-hidden="true">↗</span></article>
+        <article class="project-card reveal"><div class="project-number">02</div><div><p class="role-kicker">Object-oriented design</p><h3>Remixed UNO</h3><p>A reimagined UNO game created by a four-person team using SOLID principles and structural, creational, and behavioral design patterns.</p><div class="tags"><span>Java</span><span>JavaFX</span><span>Agile</span></div></div><span class="project-arrow" aria-hidden="true">↗</span></article>
+        <article class="project-card reveal"><div class="project-number">03</div><div><p class="role-kicker">Algorithms & data structures</p><h3>Zip &amp; Unzip</h3><p>A Python compression tool that encodes and restores image, audio, and text files using a frequency dictionary and Huffman tree.</p><div class="tags"><span>Python</span><span>Huffman trees</span></div></div><span class="project-arrow" aria-hidden="true">↗</span></article>
+      </div>
+    </section>
 
-                        <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b>
-                        </p>
-                        <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis
-                            cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
+    <section class="section resume" id="resume">
+      <div class="resume-card reveal">
+        <div><p class="eyebrow">The one-page version</p><h2>Want the full picture?</h2><p>Get the complete overview of my experience, education, skills, certificates, and honors.</p></div>
+        <div class="resume-actions"><a class="button light" href="assets/imgs/Resume.pdf" target="_blank" rel="noopener">Open résumé <span>↗</span></a><a class="download-link" href="assets/imgs/Resume.pdf" download="Asser-Ismail-Resume.pdf">Download PDF ↓</a></div>
+      </div>
+    </section>
 
-                        <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
-                </div>
-            </div><!-- end of blog wrapper -->
+    <section class="contact section" id="contact">
+      <p class="eyebrow reveal">Have an opportunity or idea?</p><h2 class="reveal">Let's build something <em>worth using.</em></h2>
+      <a class="contact-email reveal" href="mailto:asserice@gmail.com">asserice@gmail.com <span>↗</span></a>
+    </section>
+  </main>
 
-            <!-- blog-wrapper -->
-            <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="assets/imgs/img-2.jpg" class="blog-card-img"
-                        alt="picture">
-                </div>
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title">Explicabo illo</h6>
-
-                        <p class="blog-card-caption">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 456</a>
-                            <a href="#"><i class="ti-comment"></i> 264</a>
-                        </p>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim,
-                            vitae ipsam atque eum, ad iusto consequuntur voluptas, e.
-                        </p>
-
-                        <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section><!-- end of experience section -->
-
-
-    <!-- projects section -->
-    <section class="section" id="projects">
-        <div class="container text-center">
-            <p class="section-subtitle">What Have I Done ?</p>
-            <h6 class="section-title mb-6">Projects</h6>
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/pencil-case.svg"
-                                alt="picture "
-                                class="icon">
-                            <h6 class="title">Adipisicing</h6>
-                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
-                                molestias dolorem iste quod.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/responsive.svg"
-                                alt="picture"
-                                class="icon">
-                            <h6 class="title">Sapiente</h6>
-                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
-                                molestias dolorem iste quod.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/toolbox.svg"
-                                alt="picture"
-                                class="icon">
-                            <h6 class="title">Placeat</h6>
-                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
-                                molestias dolorem iste quod.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/analytics.svg"
-                                alt="picture"
-                                class="icon">
-                            <h6 class="title">Iusto</h6>
-                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
-                                molestias dolorem iste quod.</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end of row -->
-        </div>
-    </section><!-- end of projects section -->
-
-
-    
-    <!-- section -->
-    <!-- <section class="section-sm bg-primary">
-      
-        <div class="container text-center text-sm-left">
-  
-            <div class="row align-items-center">
-                <div class="col-sm offset-md-1 mb-4 mb-md-0">
-                    <h6 class="title text-light">Want to work with me?</h6>
-                    <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
-                </div>
-                <div class="col-sm offset-sm-2 offset-md-3">
-                    <button class="btn btn-lg my-font btn-light rounded">Hire Me</button>
-                </div>
-            </div> 
-        </div> 
-    </section>  -->
-    <!-- end of section -->
-
-
-    <!-- footer -->
-    <div class="container">
-        <footer class="footer">
-            <p class="mb-0">Copyright
-                <script>document.write(new Date().getFullYear())</script> &copy; <a
-                    href="https://asserismail.uoftse.com/">Asser Ismail</a>  
-            </p>
-            <div class="social-links text-right m-auto ml-sm-auto">
-                <a href="https://github.com/AsserIsmail" class="link"><i class="ti-github"></i></a>
-                <a href="https://www.linkedin.com/in/asserismail/" class="link"><i class="ti-linkedin"></i></a>
-                <a href="mailto:asserice@gmail.com" class="link"><i class="ti-email"></i></a>
-            </div>
-        </footer>
-    </div> <!-- end of page footer -->
-
-    <!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- script js -->
-    <script src="assets/js/script.js"></script>
-
+  <footer><p>© <span id="year"></span> Asser Ismail</p><div><a href="https://www.linkedin.com/in/asserismail/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/AsserIsmail" target="_blank" rel="noopener">GitHub</a><a href="#top">Back to top ↑</a></div></footer>
+  <script src="assets/js/portfolio.js"></script>
 </body>
 </html>
