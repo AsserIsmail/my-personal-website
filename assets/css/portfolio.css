@@ -15,3 +15,5 @@
 @media(max-width:960px){.section-intro h2{white-space:normal}}@media(max-width:720px){.experience-card,.experience-card:first-child{padding:25px}}
 .brand{width:277px;flex:0 0 277px}.project-pixel .project-detail,.project-usec .project-detail{margin-top:0}.credential{min-height:275px}
 @media(max-width:960px){.brand{width:118px;flex-basis:118px}}@media(max-width:720px){.credential{min-height:0}}
+.site-header nav{position:absolute;left:50%;transform:translateX(-50%)}.credential{min-height:245px}.credential-head{display:flex;align-items:center;gap:10px}.credential-head img{width:28px;height:28px;padding:4px;background:#fff;border:1px solid var(--line);border-radius:8px;object-fit:contain}.credential h3{margin:24px 0 14px}
+@media(max-width:960px){.site-header nav{position:static;transform:none}}
