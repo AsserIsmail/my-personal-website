@@ -20,6 +20,11 @@ themeButton.addEventListener('click', () => {
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
+const portfolioBrand = document.querySelector('.brand');
+window.setTimeout(() => {
+  portfolioBrand.classList.add('expanded');
+}, 3000);
+
 if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
