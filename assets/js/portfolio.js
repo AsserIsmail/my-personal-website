@@ -33,20 +33,62 @@ document.getElementById('year').textContent = new Date().getFullYear();
 const portfolioBrand = document.querySelector('.brand');
 const brandStages = ['name', 'initials', 'photo'];
 let brandStage = 0;
-let brandTimer;
+const greeting = document.getElementById('greeting');
+const greetings = [
+  { text: 'Hi', lang: 'en' },
+  { text: 'مرحبًا', lang: 'ar' },
+  { text: 'Bonjour', lang: 'fr' },
+  { text: 'Hola', lang: 'es' },
+  { text: 'Ciao', lang: 'it' },
+  { text: 'Hallo', lang: 'de' },
+  { text: 'Olá', lang: 'pt' },
+  { text: 'こんにちは', lang: 'ja' },
+  { text: '你好', lang: 'zh' },
+];
+let greetingIndex = 0;
+let cycleTimer;
+let greetingAnimations = [];
 
-function syncBrandAnimation() {
-  window.clearInterval(brandTimer);
+function advanceGreeting() {
+  const outgoing = greeting.lastElementChild;
+  greetingIndex = (greetingIndex + 1) % greetings.length;
+  const incoming = document.createElement('bdi');
+  incoming.className = 'greeting-word';
+  incoming.lang = greetings[greetingIndex].lang;
+  incoming.textContent = greetings[greetingIndex].text + ',';
+  greeting.appendChild(incoming);
+  const timing = { duration: 600, easing: 'cubic-bezier(.4,0,.2,1)', fill: 'both' };
+  const leave = outgoing.animate([
+    { opacity: 1, transform: 'translateY(0)' },
+    { opacity: 0, transform: 'translateY(-35%)' },
+  ], timing);
+  const enter = incoming.animate([
+    { opacity: 0, transform: 'translateY(35%)' },
+    { opacity: 1, transform: 'translateY(0)' },
+  ], timing);
+  greetingAnimations = [leave, enter];
+  Promise.all(greetingAnimations.map(animation => animation.finished)).then(() => {
+    outgoing.remove();
+    leave.cancel();
+    enter.cancel();
+    greetingAnimations = [];
+  }).catch(() => {});
+}
+
+function syncPortfolioAnimations() {
+  window.clearInterval(cycleTimer);
+  greetingAnimations.forEach(animation => animation.finish());
   if (document.hidden) return;
-  brandTimer = window.setInterval(() => {
-    // One state change starts the shape and both content transitions together.
+  cycleTimer = window.setInterval(() => {
+    // A shared tick keeps the logo and greeting on the same timeline.
     brandStage = (brandStage + 1) % brandStages.length;
     portfolioBrand.dataset.stage = brandStages[brandStage];
+    advanceGreeting();
   }, 3000);
 }
 
-syncBrandAnimation();
-document.addEventListener('visibilitychange', syncBrandAnimation);
+syncPortfolioAnimations();
+document.addEventListener('visibilitychange', syncPortfolioAnimations);
 
 if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   const observer = new IntersectionObserver((entries) => {

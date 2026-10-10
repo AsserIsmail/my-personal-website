@@ -29,7 +29,7 @@
 .site-header{grid-template-columns:1fr auto 1fr}.site-header nav{position:static;left:auto;transform:none;justify-self:center}.header-actions{justify-self:end}
 @media(max-width:1100px) and (min-width:961px){.brand{width:118px;flex-basis:118px}.brand-copy{display:none}.site-header nav{gap:18px}}
 @media(max-width:960px){.site-header{grid-template-columns:auto 1fr auto}.site-header nav{justify-self:start}.header-actions{justify-self:end}}
-.project-support{grid-column:1/-1;background:var(--accent-soft)}.project-support h3,.project-support p{max-width:960px}.project-support h3{margin-top:30px}.project-support .metric-row{max-width:760px;width:100%}.project-support .project-top{gap:16px;flex-wrap:wrap}.contact-availability{color:var(--muted);font-size:14px}
+.project-support{background:var(--accent-soft)}.project-support h3,.project-support p{max-width:960px}.project-support h3{margin-top:30px}.project-support .metric-row{max-width:760px;width:100%}.project-support .project-top{gap:16px;flex-wrap:wrap}.contact-availability{color:var(--muted);font-size:14px}
 
 /* Clear hierarchy for dates, employers, and resume locations. */
 .experience-meta{gap:12px;padding-right:24px;line-height:1.5}
@@ -122,3 +122,11 @@ h1{font-size:clamp(44px,5.2vw,68px);margin:16px 0 20px}
 .brand[data-stage] .brand-mark{transition:width .6s cubic-bezier(.4,0,.2,1),border-radius .6s cubic-bezier(.4,0,.2,1)}
 .brand[data-stage] .brand-mark>span{opacity:0;transform:scale(.92);transition:opacity .6s cubic-bezier(.4,0,.2,1),transform .6s cubic-bezier(.4,0,.2,1);transition-delay:0s}
 .brand[data-stage="name"] .brand-mark>.brand-full,.brand[data-stage="initials"] .brand-mark>.brand-short,.brand[data-stage="photo"] .brand-mark>.brand-photo{opacity:1;transform:scale(1);transition-delay:0s}
+
+/* Local vector icons follow the link color in both themes. */
+a.icon-link{display:inline-flex;align-items:center;gap:8px}
+.link-icon{display:inline-block;flex:0 0 18px;width:18px;height:18px;vertical-align:middle}
+.experience-links .link-icon,.archive-button .link-icon{flex-basis:15px;width:15px;height:15px}
+.greeting-line{display:block;line-height:1.35;min-height:1.35em;color:var(--accent)}
+#greeting{display:grid;position:relative;min-height:1.35em;overflow:hidden}
+.greeting-word{grid-area:1/1;justify-self:start;white-space:nowrap;line-height:1.35;will-change:transform,opacity}
