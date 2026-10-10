@@ -34,25 +34,14 @@ const portfolioBrand = document.querySelector('.brand');
 const brandStages = ['name', 'initials', 'photo'];
 let brandStage = 0;
 let brandTimer;
-let brandSwapTimer;
-let brandRevealTimer;
 
 function syncBrandAnimation() {
   window.clearInterval(brandTimer);
-  window.clearTimeout(brandSwapTimer);
-  window.clearTimeout(brandRevealTimer);
-  portfolioBrand.classList.remove('is-switching');
   if (document.hidden) return;
   brandTimer = window.setInterval(() => {
-    // Fade out before resizing so the full name never gets clipped mid-change.
-    portfolioBrand.classList.add('is-switching');
-    brandSwapTimer = window.setTimeout(() => {
-      brandStage = (brandStage + 1) % brandStages.length;
-      portfolioBrand.dataset.stage = brandStages[brandStage];
-      brandRevealTimer = window.setTimeout(() => {
-        portfolioBrand.classList.remove('is-switching');
-      }, 180);
-    }, 280);
+    // One state change starts the shape and both content transitions together.
+    brandStage = (brandStage + 1) % brandStages.length;
+    portfolioBrand.dataset.stage = brandStages[brandStage];
   }, 3000);
 }
 
