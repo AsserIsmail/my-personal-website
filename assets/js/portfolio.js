@@ -51,7 +51,7 @@ function syncBrandAnimation() {
       portfolioBrand.dataset.stage = brandStages[brandStage];
       brandRevealTimer = window.setTimeout(() => {
         portfolioBrand.classList.remove('is-switching');
-      }, 480);
+      }, 180);
     }, 280);
   }, 3000);
 }
