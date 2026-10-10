@@ -31,19 +31,29 @@ themeButton.addEventListener('click', () => {
 document.getElementById('year').textContent = new Date().getFullYear();
 
 const portfolioBrand = document.querySelector('.brand');
-const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const brandStages = ['name', 'initials', 'photo'];
 let brandStage = 0;
 let brandTimer;
+let brandSwapTimer;
+let brandRevealTimer;
 
 function syncBrandAnimation() {
   window.clearInterval(brandTimer);
-  // Reduced motion uses instant stage changes through CSS, not a frozen logo.
+  window.clearTimeout(brandSwapTimer);
+  window.clearTimeout(brandRevealTimer);
+  portfolioBrand.classList.remove('is-switching');
   if (document.hidden) return;
   brandTimer = window.setInterval(() => {
-    brandStage = (brandStage + 1) % brandStages.length;
-    portfolioBrand.dataset.stage = brandStages[brandStage];
-  }, 4200);
+    // Fade out before resizing so the full name never gets clipped mid-change.
+    portfolioBrand.classList.add('is-switching');
+    brandSwapTimer = window.setTimeout(() => {
+      brandStage = (brandStage + 1) % brandStages.length;
+      portfolioBrand.dataset.stage = brandStages[brandStage];
+      brandRevealTimer = window.setTimeout(() => {
+        portfolioBrand.classList.remove('is-switching');
+      }, 800);
+    }, 450);
+  }, 5000);
 }
 
 syncBrandAnimation();

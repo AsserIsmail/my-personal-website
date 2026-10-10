@@ -95,3 +95,22 @@ h1{font-size:clamp(44px,5.2vw,68px);margin:16px 0 20px}
   .contact{padding-bottom:48px}
 }
 @media(max-width:460px){.profile-card img{width:90px;height:90px}.project-links{gap:10px}}
+
+/* Fade text out, resize the mark, then fade the next stage in. */
+.brand .brand-mark{transition:width .8s cubic-bezier(.45,0,.2,1),border-radius .8s ease}
+.brand .brand-mark>span{transform:none;transition:opacity .45s ease;transition-delay:0s}
+.brand.is-switching .brand-mark>span{opacity:0}
+.education-card{display:grid;grid-template-columns:1fr 1.4fr;gap:32px;margin-top:18px;padding:26px;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:18px;background:var(--surface)}
+.education-meta h3{font-size:28px;margin:12px 0}
+.education-meta>p:not(.role-type){font-size:14px;color:var(--muted);margin:8px 0}
+.education-date{display:inline-block;margin-top:8px;font:500 13px "DM Mono",monospace;color:var(--accent)}
+.education-coursework h4{margin:0 0 14px;font-size:14px}
+.education-coursework ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:16px 22px}
+.education-coursework li{font-size:13px;font-weight:700;line-height:1.5}
+.education-coursework li span{display:block;color:var(--muted);font-size:12px;font-weight:400;margin-top:3px}
+.site-header nav{gap:18px}
+@media(min-width:961px) and (max-width:1250px){.brand{width:118px;flex-basis:118px}.brand-copy{display:none}.site-header{gap:20px}}
+@media(max-width:720px){.education-card{grid-template-columns:1fr;gap:24px;padding:20px}}
+@media(max-width:460px){.education-coursework ul{grid-template-columns:1fr;gap:12px}}
+/* Keep the requested gentle fade while avoiding size animation for reduced motion. */
+@media(prefers-reduced-motion:reduce){.brand .brand-mark{transition:none}.brand .brand-mark>span{transform:none;transition:opacity .45s ease}}
