@@ -121,5 +121,4 @@ h1{font-size:clamp(44px,5.2vw,68px);margin:16px 0 20px}
 /* One shared timeline: content crossfades as the container changes shape. */
 .brand[data-stage] .brand-mark{transition:width .6s cubic-bezier(.4,0,.2,1),border-radius .6s cubic-bezier(.4,0,.2,1)}
 .brand[data-stage] .brand-mark>span{opacity:0;transform:scale(.92);transition:opacity .6s cubic-bezier(.4,0,.2,1),transform .6s cubic-bezier(.4,0,.2,1);transition-delay:0s}
-.brand[data-stage="name"] .brand-full,.brand[data-stage="initials"] .brand-short,.brand[data-stage="photo"] .brand-photo{opacity:1;transform:scale(1);transition-delay:0s}
-@media(prefers-reduced-motion:reduce){.brand[data-stage] .brand-mark{transition:none}.brand[data-stage] .brand-mark>span{transform:none;transition:opacity .6s ease}}
+.brand[data-stage="name"] .brand-mark>.brand-full,.brand[data-stage="initials"] .brand-mark>.brand-short,.brand[data-stage="photo"] .brand-mark>.brand-photo{opacity:1;transform:scale(1);transition-delay:0s}
