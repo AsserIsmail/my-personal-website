@@ -13,4 +13,4 @@ https://asserismail.uoftse.com/
 - `assets/js/portfolio.js`: theme switching and reveal effects.
 - `assets/imgs/Asser-Ismail-Resume.pdf`: current downloadable resume.
 
-The featured my newest project; [Multi-Agent Customer Support AI](https://github.com/AsserIsmail/customer-support-multi-agent) which includes source and video demo links. Its description reflects a local application using fictional customer data.
+This featured my newest project; [Multi-Agent Customer Support AI](https://github.com/AsserIsmail/customer-support-multi-agent) which includes source and video demo links. Its description reflects a local application using fictional customer data.
