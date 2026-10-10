@@ -21,9 +21,28 @@ themeButton.addEventListener('click', () => {
 document.getElementById('year').textContent = new Date().getFullYear();
 
 const portfolioBrand = document.querySelector('.brand');
-window.setInterval(() => {
-  portfolioBrand.classList.toggle('expanded');
-}, 3000);
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const brandStages = ['initials', 'name', 'photo'];
+let brandStage = 0;
+let brandTimer;
+
+function syncBrandAnimation() {
+  window.clearInterval(brandTimer);
+  if (reducedMotion.matches) {
+    brandStage = 0;
+    portfolioBrand.dataset.stage = brandStages[brandStage];
+    return;
+  }
+  if (document.hidden) return;
+  brandTimer = window.setInterval(() => {
+    brandStage = (brandStage + 1) % brandStages.length;
+    portfolioBrand.dataset.stage = brandStages[brandStage];
+  }, 4200);
+}
+
+syncBrandAnimation();
+reducedMotion.addEventListener('change', syncBrandAnimation);
+document.addEventListener('visibilitychange', syncBrandAnimation);
 
 if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   const observer = new IntersectionObserver((entries) => {
