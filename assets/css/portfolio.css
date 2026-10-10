@@ -20,3 +20,4 @@
 .site-header{grid-template-columns:1fr auto 1fr}.site-header nav{position:static;left:auto;transform:none;justify-self:center}.header-actions{justify-self:end}
 @media(max-width:1100px) and (min-width:961px){.brand{width:118px;flex-basis:118px}.brand-copy{display:none}.site-header nav{gap:18px}}
 @media(max-width:960px){.site-header{grid-template-columns:auto 1fr auto}.site-header nav{justify-self:start}.header-actions{justify-self:end}}
+.project-support{grid-column:1/-1;background:var(--accent-soft)}.project-support h3,.project-support p{max-width:960px}.project-support h3{margin-top:30px}.project-support .metric-row{max-width:760px;width:100%}.project-support .project-top{gap:16px;flex-wrap:wrap}.contact-availability{color:var(--muted);font-size:14px}

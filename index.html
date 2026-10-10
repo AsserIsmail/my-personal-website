@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Asser Ismail is an AI/ML and distributed systems engineer building production LLM systems, cloud databases, and applied machine learning projects.">
+  <meta name="description" content="Asser Ismail is an AI/ML and distributed systems engineer building multi-agent assistants, MCP and RAG systems, cloud databases, and applied machine learning projects.">
   <meta name="author" content="Asser Ismail">
   <meta name="theme-color" content="#f3f5f2">
   <link rel="icon" type="image/jpeg" href="assets/imgs/asser-professional.jpeg">
@@ -38,7 +38,7 @@
       <div class="hero-main reveal">
         <p class="overline">Software Engineer</p>
         <h1>Hi, I’m Asser Ismail.</h1>
-        <p class="hero-copy">I specialize in AI/ML and distributed systems, with experience building production AI applications, cloud database infrastructure, and applied machine learning projects.</p>
+        <p class="hero-copy">I build AI applications and distributed systems, from LangGraph multi-agent assistants and MCP-powered retrieval to cloud database infrastructure. My work combines practical software engineering, applied machine learning, and evidence-based evaluation.</p>
         <div class="button-row">
           <a class="button primary" href="mailto:asserice@gmail.com">Get in touch <span>↗</span></a>
           <a class="button secondary" href="https://www.linkedin.com/in/asserismail/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
@@ -49,13 +49,13 @@
       <aside class="profile-card reveal">
         <img src="assets/imgs/asser-professional.jpeg" alt="Asser Ismail" width="180" height="180">
         <div><strong>Asser Ismail</strong><span>Toronto, Canada</span></div>
-        <p>Honours B.Sc. in Computer Science<br>University of Toronto</p>
-        <span class="availability"><i></i> Open to ambitious engineering teams</span>
+        <p>Honours B.Sc. in Computer Science<br>University of Toronto · June 2026<br>Computer Science Specialist · PEY Co-op</p>
+        <span class="availability"><i></i> Open to relocation</span>
       </aside>
     </section>
 
     <section class="signal-strip" aria-label="Career focus">
-      <span>Production AI</span><span>MCP + RAG</span><span>Distributed databases</span><span>Applied ML research</span><span>Cloud infrastructure</span>
+      <span>Multi-agent AI</span><span>MCP + RAG</span><span>Distributed databases</span><span>Applied ML research</span><span>Cloud infrastructure</span>
     </section>
 
     <section class="section" id="experience">
@@ -67,7 +67,7 @@
         </article>
         <article class="experience-card reveal">
           <div class="experience-meta"><span>May 2024 — Sep 2025</span><span>Huawei</span></div>
-          <div class="experience-body"><p class="role-type">Cloud databases</p><h3>Cloud Database DevOps Engineer</h3><p>Developed low-level C, Python, and Shell software for Linux cloud database systems supporting enterprise SaaS deployments. Worked on replication, storage, high availability, recovery, and AI-assisted database tooling.</p><ul><li>Automated DevOps workflows to improve deployment efficiency by 40%.</li><li>Built LLM-driven synthetic data generation from DDL schemas for testing and benchmarking.</li><li>Accelerated semantic search and data retrieval by 23% with Ollama, Vanna AI, and vector databases.</li></ul><div class="experience-stack"><span>C</span><span>Python</span><span>Shell</span><span>Linux</span><span>RDMA</span><span>GitLab</span><span>Ollama</span><span>Vanna AI</span><span>Vector databases</span></div></div>
+          <div class="experience-body"><p class="role-type">Cloud databases</p><h3>Cloud Database DevOps Engineer</h3><p>Developed low-level C, Python, and Shell software for Linux cloud database systems supporting enterprise SaaS and 5G deployments. Built and debugged replication, high-availability, and recovery components, with Databricks and GitLab supporting the work.</p><ul><li>Automated DevOps workflows to improve deployment efficiency by 40%.</li><li>Built LLM-driven synthetic data generation from DDL schemas for testing and benchmarking.</li><li>Accelerated semantic search and data retrieval by 23% with Ollama, Vanna AI, and vector databases.</li></ul><div class="experience-stack"><span>C</span><span>Python</span><span>Shell</span><span>Linux</span><span>RDMA</span><span>Databricks</span><span>GitLab</span><span>Ollama</span><span>Vanna AI</span><span>Vector databases</span></div></div>
         </article>
         <article class="experience-card reveal">
           <div class="experience-meta"><span>Jan 2024 — Apr 2024</span><span>Headstarter AI</span></div>
@@ -79,8 +79,18 @@
     <section class="section projects-section" id="projects">
       <div class="section-intro reveal"><p class="section-index">02 / Projects & research</p><h2>Recent work with measurable results.</h2></div>
       <div class="featured-projects">
+        <article class="project project-support reveal">
+          <div class="project-top"><span class="project-code">01</span><span class="project-kind">Featured project · Agentic AI</span></div>
+          <h3>Multi-Agent Customer Support AI</h3>
+          <p>A conversational support assistant that combines customer records with company policy PDFs. A LangGraph supervisor routes questions to SQL and RAG specialists, then synthesizes answers with traceable evidence and page-level policy citations.</p>
+          <div class="metric-row"><div><strong>2</strong><span>Specialist agents</span></div><div><strong>5</strong><span>Read-only MCP tools</span></div><div><strong>SQL + RAG</strong><span>Combined evidence</span></div></div>
+          <p class="project-detail">Built a FastAPI backend and Streamlit interface with PDF uploads and conversational memory. PyMuPDF, OpenAI embeddings, and persistent Chroma search power policy retrieval; constrained MCP lookups access synthetic SQLite customer, order, and ticket data. Automated tests cover routing, citations, retrieval, and failure handling.</p>
+          <div class="project-tags"><span>Python</span><span>LangGraph</span><span>MCP</span><span>RAG</span><span>FastAPI</span><span>Streamlit</span><span>SQLite</span><span>Chroma</span><span>OpenAI API</span><span>PyMuPDF</span><span>Docker</span><span>pytest</span></div>
+          <p class="project-detail">Locally runnable demo using fictional customer data.</p>
+          <div class="project-links"><a class="code-button" href="https://github.com/AsserIsmail/customer-support-multi-agent" target="_blank" rel="noopener">View Code ↗</a><a class="paper-button" href="https://drive.google.com/file/d/1nyhptz4e2ERIvjOXr5eyZKM0FoNNDflS/view" target="_blank" rel="noopener">Watch Demo ↗</a></div>
+        </article>
         <article class="project project-bias reveal">
-          <div class="project-top"><span class="project-code">01</span><span class="project-kind">LLM alignment · White paper</span></div>
+          <div class="project-top"><span class="project-code">02</span><span class="project-kind">LLM alignment · White paper</span></div>
           <h3>InstructLab Bias Detection Model</h3>
           <p>Fine-tuned Granite-7B with Red Hat × IBM InstructLab to detect political, gender, age, ethical, marketing, and research bias. The system identifies biased text, categorizes it, and explains the reasoning as advisory feedback.</p>
           <div class="metric-row"><div><strong>~0.99</strong><span>Political-bias accuracy</span></div><div><strong>3</strong><span>Models evaluated</span></div><div><strong>6</strong><span>Bias taxonomies</span></div></div>
@@ -89,7 +99,7 @@
           <div class="project-links"><a class="code-button" href="https://github.com/CSC392-CSC492-Building-AI-ML-systems/RedHat-x-IBM-InstructLab-Winter2026" target="_blank" rel="noopener">View Code ↗</a><a class="paper-button" href="assets/imgs/InstructLab-Bias-Detection-White-Paper.pdf" target="_blank" rel="noopener">Read White Paper ↗</a></div>
         </article>
         <article class="project project-cnn reveal">
-          <div class="project-top"><span class="project-code">02</span><span class="project-kind">Deep learning · Computer vision</span></div>
+          <div class="project-top"><span class="project-code">03</span><span class="project-kind">Deep learning · Computer vision</span></div>
           <h3>CNN Plays GeoGuessr</h3>
           <p>Built a worldwide photo-geolocation model on an EVA-02 backbone, combining continent classification with gated coordinate regression to predict continuous spherical coordinates from Street View imagery.</p>
           <div class="metric-row"><div><strong>96.1%</strong><span>Continent accuracy</span></div><div><strong>38K+</strong><span>Training images</span></div><div><strong>251 km</strong><span>Median error</span></div></div>
@@ -98,14 +108,14 @@
           <div class="project-links"><a class="code-button" href="https://github.com/AsserIsmail/CNN-Photo-Geolocation-Model" target="_blank" rel="noopener">View Code ↗</a><a class="paper-button" href="assets/imgs/CNN-Photo-Geolocation-Paper.pdf" target="_blank" rel="noopener">Read Project Paper ↗</a></div>
         </article>
         <article class="project project-pixel reveal">
-          <div class="project-top"><span class="project-code">03</span><span class="project-kind">Distributed systems · AWS</span></div>
+          <div class="project-top"><span class="project-code">04</span><span class="project-kind">Distributed systems · AWS</span></div>
           <h3>Distributed Real-Time Pixel Platform</h3>
           <p>Architected a serverless collaborative canvas for concurrent real-time interaction. API Gateway WebSockets and AWS Lambda handle persistent connections and pixel broadcasts, Redis provides connection state and atomic rate limiting, and CloudFront reduces read latency through edge caching.</p>
           <div class="project-tags"><span>AWS Lambda</span><span>WebSockets</span><span>Redis</span><span>CloudFront</span><span>API Gateway</span></div>
           <a class="code-button" href="https://github.com/AsserIsmail" target="_blank" rel="noopener">Explore profile ↗</a>
         </article>
         <article class="project project-usec reveal">
-          <div class="project-top"><span class="project-code">04</span><span class="project-kind">Full-stack platform</span></div>
+          <div class="project-top"><span class="project-code">05</span><span class="project-kind">Full-stack platform</span></div>
           <h3>U of T Software Platform</h3>
           <p>Led three developers building an organization platform for 200+ students. Designed the React, Flask, and MongoDB architecture, implemented REST APIs, secure Firebase authentication, and real-time updates, and coordinated deployment on DigitalOcean.</p>
           <div class="project-tags"><span>React</span><span>Flask</span><span>MongoDB</span><span>Firebase</span><span>REST APIs</span></div>
@@ -142,15 +152,18 @@
     <section class="section technology" id="technology">
       <div class="section-intro reveal"><p class="section-index">05 / Technologies</p><h2>Tools across the stack.</h2></div>
       <div class="tech-grid reveal">
-        <div><h3>Languages</h3><p>Python · C · C++ · Java · TypeScript · JavaScript · SQL · PostgreSQL · Shell · Assembly</p></div>
-        <div><h3>AI / ML</h3><p>PyTorch · TensorFlow · LangChain · LangGraph · OpenAI API · Gemini API · Ollama · RAG · MCP · Jupyter</p></div>
-        <div><h3>Cloud & systems</h3><p>AWS · Docker · Kubernetes · Linux · Redis · GitLab · GitHub · DigitalOcean · REST APIs · WebSockets</p></div>
-        <div><h3>Applications & data</h3><p>React · Flask · FastAPI · Firebase · MongoDB · Tableau · Power BI · Postman · Vanna AI</p></div>
+        <div><h3>Languages</h3><p>Python · C · C++ · Java · TypeScript · JavaScript · SQL · Shell · Assembly</p></div>
+        <div><h3>AI / ML</h3><p>LangGraph · LangChain · MCP · RAG · OpenAI API · Gemini API · OpenAI embeddings · PyTorch · TensorFlow · Ollama · Model evaluation</p></div>
+        <div><h3>Cloud & systems</h3><p>AWS · Docker · Kubernetes · Linux · RDMA · Redis · API Gateway · CloudFront · DigitalOcean · WebSockets</p></div>
+        <div><h3>Applications & data</h3><p>React · Next.js · Flask · FastAPI · Streamlit · REST APIs · Firebase · PyMuPDF</p></div>
+        <div><h3>Databases &amp; analytics</h3><p>SQLite · PostgreSQL · MongoDB · Chroma · Databricks · Tableau · Power BI · Vanna AI</p></div>
+        <div><h3>Development &amp; testing</h3><p>Git · GitHub · GitLab · GitHub Actions · pytest · Postman · Jupyter · Claude Code · Codex</p></div>
       </div>
     </section>
 
     <section class="section contact">
       <p class="section-index reveal">06 / Contact</p><h2 class="reveal">Let’s build systems that are useful, reliable, and technically ambitious.</h2>
+      <p class="reveal contact-availability">Based in Toronto, ON · Open to relocation anywhere<br>Eligible to work in the US; no sponsorship required.</p>
       <div class="button-row reveal"><a class="button primary" href="mailto:asserice@gmail.com">Email me ↗</a><a class="button secondary" href="https://www.linkedin.com/in/asserismail/" target="_blank" rel="noopener">LinkedIn ↗</a><a class="button secondary" href="https://github.com/AsserIsmail" target="_blank" rel="noopener">GitHub ↗</a><a class="button secondary" href="assets/imgs/Asser-Ismail-Resume.pdf" download="Asser-Ismail-Resume.pdf">Download résumé ↓</a></div>
     </section>
   </main>
